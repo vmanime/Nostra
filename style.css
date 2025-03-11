@@ -1,0 +1,263 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: "Poppins", serif;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.navbar-links{
+    display:flex;
+    column-gap:20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color:navy;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: darkslategray;
+}
+.navbar-menu-toggle{
+    display:none;
+}
+
+/*Side Navbar*/
+
+.side-navbar{
+    background-color: rgb(6, 6, 34);
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:-60%;
+    padding:20px;
+    color:white;
+    transition:1s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+/*Header*/
+
+.header{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    padding:50px;
+}
+.header-button{
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top:10px;
+     padding-bottom:10px;
+     margin-top:10px;
+     background-color: rgb(10, 10, 59);
+     color:whitesmoke;
+     cursor:pointer;
+}
+.header-button:hover{
+    background-color: pink;
+    color:black;
+}
+.service{
+    padding:20px;
+}
+.service-container-1{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-container-2{
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    gap:10px;
+}
+.service-container-2 div{
+    background-color:gainsboro;
+    border-radius: 5px;
+    padding:10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position:relative;
+    flex-basis:20%;
+}
+.new-arrival button{
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:10px;
+    color:rgb(68, 8, 8);
+    position:absolute;
+    top:50%;
+    left:18%;
+    border-radius:10px;
+    border:none;
+}
+.new-arrival button:hover{
+    background-color: yellow;
+    color: black;
+}
+.news{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:20px;
+}
+.news input{
+    padding:11px;
+    width:800px;
+    margin-bottom:10px;
+    border:solid black 3px;
+}
+.news button{
+    margin-top:10px;
+    color:wheat;
+    background-color: rgb(10, 10, 59);
+    border-radius:10px;
+    padding:10px;
+}
+.news button:hover{
+    background-color:pink;
+    color:black;
+}
+.footer{ 
+    margin-top:20px;
+    padding:40px;
+    background-color:rgb(54, 99, 99);
+    color:wheat;
+}
+.product-section{
+    margin-top:20px;
+}
+.product-search{
+    width:80%;
+    border:solid black 2px;
+    border-radius:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px;
+    margin:auto;
+}
+.product-search input{
+    border:none;
+    background-color: transparent;
+    width:100%;
+
+}
+.product-search input:focus{
+    outline:none;
+}
+.products{
+    padding:20px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis:20%;
+
+}
+.product-box img{
+    border-radius:10px;
+}
+
+/*contact*/
+
+.conctact-head{
+    text-align: center;
+    padding:10px;
+    margin:10px;
+}
+.para{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 350px;
+    margin-right:350px; 
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+}
+.contact-container input{
+    padding:10px;
+    width:70%;
+    margin:5px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    
+}
+.contact-container input:hover{
+    background-color: lightgray;
+}
+.contact-container{
+    margin:20px;
+    padding: 10px;
+}
+
+.contact-button{
+    margin:10px;
+    color:white;
+    background-color:rgb(10, 9, 9);
+    border-radius:10px;
+    padding:10px;
+    width: 100px;
+}
+.contact-button:hover{
+    background-color:lightsalmon;
+    color:black;
+}
+
+
+/*Media Query*/
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .navbar-links{
+        display:none;
+    }
+    .header-image{
+        display:none;
+    }
+    .service-container-1{
+        display:none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+    .para{
+        display:inline;
+        box-shadow: none;
+    }
+}
+
